@@ -1,0 +1,60 @@
+{
+  "name": "leaderboard-app",
+  "version": "1.0.0",
+  "description": "Free code camp react leaderboard applicaiton using React/Redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "test": "jest --verbose",
+    "build": "webpack",
+    "coverage": "opener ./coverage/lcov-report/index.html"
+  },
+  "author": "Jonathan Irving",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "jest-css-modules": "^1.1.0",
+    "opener": "^1.4.3",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "jest": {
+    "setupFiles": [
+      "./__tests__/shim.js",
+      "./__tests__/global.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "shim.js",
+      "global.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  }
+}
